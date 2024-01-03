@@ -27,7 +27,7 @@ window.addEventListener('message', function (eventData) {
                                         data: 'Hi there user'
                                     }
                                 })
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
 
                         return;
@@ -40,7 +40,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'surveryResponse', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "validationResponse":
@@ -66,7 +66,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'validationResponse', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "resetResponse":
@@ -91,7 +91,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'resetResponse', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "payoutDetails":
@@ -116,7 +116,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'payoutDetails', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "uploadSuccess":
@@ -141,7 +141,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'uploadSuccess', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "submitSuccess":
@@ -167,7 +167,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'submitSuccess', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "preSubmitResponse":
@@ -193,7 +193,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'preSubmitResponse', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "finalSubmitResponse":
@@ -221,7 +221,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'finalSubmitResponse', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     case "claimStatusResponse":
@@ -248,7 +248,7 @@ window.addEventListener('message', function (eventData) {
                             myiframe.contentWindow.postMessage(JSON.stringify({
                                 event_code: 'claimStatusResponse', data:
                                     event.data.data.data
-                            }), 'https://app.yellowmessenger.com');
+                            }), '*');
                         }, 2000);
                         return;
                     default:
